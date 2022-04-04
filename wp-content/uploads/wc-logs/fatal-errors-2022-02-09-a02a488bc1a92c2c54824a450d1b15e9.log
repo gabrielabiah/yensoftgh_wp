@@ -1,0 +1,11 @@
+2022-02-09T08:18:14+00:00 CRITICAL Uncaught Error: Failed opening required '/home/yensoft/public_html/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/Marketing.php' (include_path='.:') in /home/yensoft/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php:87
+Stack trace:
+#0 /home/yensoft/public_html/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(128): Automattic\Jetpack\Autoloader\jp5adc8fb87fa67cfc34db9ccfff923799\PHP_Autoloader::load_class()
+#1 /home/yensoft/public_html/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(100): Automattic\WooCommerce\Admin\Events->possibly_add_notes()
+#2 /home/yensoft/public_html/wp-includes/class-wp-hook.php(292): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#3 /home/yensoft/public_html/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#4 /home/yensoft/public_html/wp-includes/plugin.php(551): WP_Hook->do_action()
+#5 /home/yensoft/public_html/wp-cron.php(138): do_action_ref_array()
+#6 {main}
+  thrown in /home/yensoft/public_html/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php on line 87
+
